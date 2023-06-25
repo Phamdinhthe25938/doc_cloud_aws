@@ -2,7 +2,7 @@
       - Tight coupling : cac service giao tiếp trực tiếp với nhau
       - Loose coupling :
            + Các service giao tiếp với nhau qua queue
-           + ![decoupling_application.png](decoupling_application.png)
+           + ![decoupling_application.png](../image/decoupling_application.png)
 
      
  * SQS : Simple queue service  

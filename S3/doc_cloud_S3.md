@@ -91,7 +91,7 @@
            + File từ client -> Edge location (độ trễ thấp) -> amazone dùng network riêng để push lên -> s3 -> tiết kiệm thời gian 
            + Edge location : như là 1 trang web mà CloudFront sử dụng để lưu các bản sao nội dung của bạ vào bộ nhớ đệm ẩn nhằm 
                              phân phối nhanh tới người dùng ở bất kì vị trí nào .
-           + ![S3 Transfer Acceseration Image](img_s3_transfer_acceleration.png)
+           + ![S3 Transfer Acceseration Image](../image/img_s3_transfer_acceleration.png)
       - S3 Byte - Range Fetches :
            + Sử dụng Range HTTP header trong request để download một phần của byte range cyar object 
            + Tạo đồng thơ nhiều kết nối để download song song nhiều byet range của object
