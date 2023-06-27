@@ -16,4 +16,22 @@
           + Bản tin được gửi it nhat 1 làn 
       
       - SQS - FIFO Queue
-          + Giong voi standard queue
+          + Giống với standard queue 
+          + FIFO delivery 
+          + Bản tin được gửi chính xác 1 lần 
+          + Gioi hạn về bằng thông 300 Transaction per second (TPS) 
+      
+      - Producing / Consuming messages
+         . Producing message
+            + Tạo ra bản tin (Message) sử dụng SDK
+            + Message tồn tại trong SQS cho tới khi Consumer xóa nó
+            + Message được lưu trong queue : 4 ngày (mặc định) và up to 14 ngày 
+            + ![SQS_SEND.png](SQS_SEND.png)
+         . Consuming messages
+            + Consumers có thể chạy trên EC2 , Servers , Lambdas
+            + Poll SQS để lấy về các messages
+            + Xử lý messages
+            + Xóa các message trong SQS Quebe khi xử lý xong
+      - Message Visibility TimeOut
+          + Khi một Customer pull một message về xử lý thì cờ Visibility Timeout sẽ được bật và bộ đếm thời gian sẽ được  thực thi
+          + Trong thời gian vis visibility timeout , message sẽ bị ẩn đi 
