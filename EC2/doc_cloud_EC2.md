@@ -4,6 +4,9 @@
             + Compute : khả năng tính toán trên mtr cloud
        - Là dịch vụ lâu đời và quan trọng bậc nhất của AWS
   
+
+  * User Data : là những câu lệnh cmd mà bạn muốn chạy khi start 1 instance 
+  
   * EC2 type :
        - aws ec2 là dịch vụ cung cấp khả năng tính toán trên  cloud AWS
        - Mô hình trả phí cần được tính tới khi triển khai ha tầng aws  có 4 : 
