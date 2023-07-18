@@ -29,4 +29,10 @@
           ![auto_sacling.png](auto_sacling.png)
    * Step creat auto scaling :
         ![step_auto_scaling.png](step_auto_scaling.png)
+   * 
        + auto group scaling sẽ start 1 new instance Ec2 khi có số instance trong group bị dừng hoặc tắt đột ngột và số instance hoạt động nhỏ hơn instance minxilum đã setting
+       
+   * Step auto scaling schedule :
+       + thao tác này set up 1 schedule cho 1 auto scaling group sẽ tự động tăng giảm size instance trong 1 target group ở 1 thời gian 
+               giúp vc trải nghiệm trở nên linh hoạt và tránh các chi phí , tránh sự cố gián đoạn xảy ra khi đang sử dụng
+   
